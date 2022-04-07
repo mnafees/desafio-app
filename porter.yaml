@@ -1,0 +1,17 @@
+version: v1
+resources:
+  - name: "main"
+    source:
+      name: "web"
+    config:
+      build:
+        method: "buildpack"
+      values:
+        container:
+          command: "npm run start"
+          port: 3000
+        resources:
+          requests:
+            cpu: 250m
+            memory: 512Mi
+  
