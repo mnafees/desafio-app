@@ -1,7 +1,10 @@
 "on":
-  pull_request:
-    types:
-    - closed
+  workflow_dispatch:
+    inputs:
+      deployment_id:
+        description: Deployment ID
+        required: true
+        type: number
 name: Porter Preview Environment
 jobs:
   porter-delete-preview:
@@ -9,13 +12,10 @@ jobs:
     steps:
     - name: Delete Porter preview env
       timeout-minutes: 30
-      uses: porter-dev/porter-delete-preview-action@v0.1.0
+      uses: porter-dev/porter-delete-preview-action@v0.2.0
       with:
-        cluster: "35"
-        host: https://dashboard.dev.getporter.dev
-        installation_id: "21704327"
-        namespace: pr-${{ github.event.pull_request.number }}-desafio-app
-        project: "12"
-        repo_name: desafio-app
-        repo_owner: ${{ github.repository_owner }}
-        token: ${{ secrets.PORTER_TOKEN_12 }}
+        cluster: "12"
+        deployment_id: ${{ github.event.inputs.deployment_id }}
+        host: https://07fb-103-98-78-26.ngrok.io
+        project: "2"
+        token: ${{ secrets.PORTER_TOKEN_2 }}
