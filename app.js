@@ -8,7 +8,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-console.log("test");
+console.log("mehh");
 
 app.use(logger('dev'));
 app.use(express.json());
