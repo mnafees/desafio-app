@@ -14,8 +14,8 @@ jobs:
       timeout-minutes: 30
       uses: porter-dev/porter-delete-preview-action@v0.2.0
       with:
-        cluster: "12"
+        cluster: "83"
         deployment_id: ${{ github.event.inputs.deployment_id }}
-        host: https://07fb-103-98-78-26.ngrok.io
-        project: "2"
-        token: ${{ secrets.PORTER_TOKEN_2 }}
+        host: https://dashboard.staging.getporter.dev
+        project: "72"
+        token: ${{ secrets.PORTER_TOKEN_72 }}
