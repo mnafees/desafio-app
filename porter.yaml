@@ -5,7 +5,7 @@ resources:
       name: "web"
     config:
       build:
-        method: "buildpack"
+        method: "pack"
       values:
         container:
           command: "npm run start"
