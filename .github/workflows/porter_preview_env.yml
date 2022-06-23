@@ -21,6 +21,8 @@ name: Porter Preview Environment
 jobs:
   porter-preview:
     runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v2.3.4
