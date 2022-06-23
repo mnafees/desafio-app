@@ -8,7 +8,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-console.log("he1");
+console.log("here");
 
 app.use(logger('dev'));
 app.use(express.json());
