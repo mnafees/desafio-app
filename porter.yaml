@@ -14,3 +14,17 @@ resources:
           requests:
             cpu: 250m
             memory: 512Mi
+  - name: "1main"
+    source:
+      name: "web"
+    config:
+      build:
+        method: "1pack"
+      values:
+        container:
+          command: "npm run start"
+          port: 3000
+        resources:
+          requests:
+            cpu: 250m
+            memory: 512Mi
