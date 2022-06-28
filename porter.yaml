@@ -21,7 +21,7 @@ resources:
       name: "web"
     config:
       build:
-        method: "1pack"
+        method: "11pack"
       values:
         ingress:
           enabled: false
