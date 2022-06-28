@@ -7,8 +7,6 @@ resources:
       build:
         method: "pack"
       values:
-        ingress:
-          enabled: false
         container:
           command: "npm run start"
           port: 3000
