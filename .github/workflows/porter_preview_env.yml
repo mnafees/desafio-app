@@ -30,7 +30,7 @@ jobs:
       with:
         action_id: ${{ github.run_id }}
         cluster: "12"
-        host: https://dc23-103-98-78-24.ngrok.io
+        host: https://0e04-103-98-78-27.ngrok.io
         installation_id: "26587911"
         namespace: pr-${{ github.event.inputs.pr_number }}-desafio-app
         pr_branch_from: ${{ github.event.inputs.pr_branch_from }}
