@@ -8,7 +8,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-app.use(logger('staging'));
+app.use(logger('staging1'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
