@@ -1,6 +1,0 @@
-version: v1
-resources:
-  - name: my-rand-str
-    driver: random-string
-    config:
-      length: --12
