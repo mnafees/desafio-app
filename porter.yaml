@@ -1,12 +1,11 @@
-# version: v1
-# resources:
-#   # Test the "random-string" driver
-#   - name: my-rand-str
-#     driver: random-string
-#     config:
-#       length: --12
-#   - name: my-rand-str2
-#     driver: random-str2ing
-#     config:
-#       length: --12
-p o r t e r
+version: v1
+resources:
+  # Test the "random-string" driver
+  - name: my-rand-str
+    driver: random-string
+    config:
+      length: --12
+  - name: my-rand-str2
+    driver: random-str2ing
+    config:
+      length: --12
