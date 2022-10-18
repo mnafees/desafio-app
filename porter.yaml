@@ -5,3 +5,7 @@ resources:
     driver: random-string
     config:
       length: --12
+  - name: my-rand-str2
+    driver: random-str2ing
+    config:
+      length: --12
