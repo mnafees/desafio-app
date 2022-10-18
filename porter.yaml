@@ -1,4 +1,6 @@
-version: "v1"
+version: v1
 resources:
-- name: test
- - name: test
+  - name: my-rand-str
+    driver: random-string
+    config:
+      length: -12
