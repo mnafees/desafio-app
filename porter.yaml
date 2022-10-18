@@ -3,4 +3,4 @@ resources:
   - name: my-rand-str
     driver: random-string
     config:
-      length: -12
+      length: --12
