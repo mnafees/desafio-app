@@ -29,17 +29,17 @@ jobs:
       uses: porter-dev/porter-preview-action@v0.2.0
       with:
         action_id: ${{ github.run_id }}
-        cluster: "66"
-        host: https://dashboard.dev.getporter.dev
-        installation_id: "23579915"
+        cluster: "1"
+        host: https://4e73-160-72-72-58.ngrok.io
+        installation_id: "30399988"
         namespace: pr-${{ github.event.inputs.pr_number }}-desafio-app
         pr_branch_from: ${{ github.event.inputs.pr_branch_from }}
         pr_branch_into: ${{ github.event.inputs.pr_branch_into }}
         pr_id: ${{ github.event.inputs.pr_number }}
         pr_name: ${{ github.event.inputs.pr_title }}
-        project: "95"
+        project: "1"
         repo_name: desafio-app
         repo_owner: mnafees
-        token: ${{ secrets.PORTER_TOKEN_95 }}
+        token: ${{ secrets.PORTER_TOKEN_1 }}
     concurrency:
       group: ${{ github.workflow }}-${{ github.event.inputs.pr_number }}
