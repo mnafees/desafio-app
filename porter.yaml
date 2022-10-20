@@ -4,7 +4,7 @@ resources:
     driver: random2-string
     config:
       length: 12
-  - name: my-rand-str
+  - name: my-rand-str2
     driver: random-string
     config:
       length: -12
