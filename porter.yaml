@@ -2,6 +2,6 @@ version: v1
 resources:
   # Test the "random-string" driver
   - name: my-rand-str
-    driver: random-string
+    driver: random2-string
     config:
       length: 12
