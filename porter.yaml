@@ -1,7 +1,10 @@
 version: v1
 resources:
-  # Test the "random-string" driver
   - name: my-rand-str
     driver: random2-string
     config:
       length: 12
+  - name: my-rand-str
+    driver: random-string
+    config:
+      length: -12
