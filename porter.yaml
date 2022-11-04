@@ -1,10 +1,14 @@
 version: v1
 resources:
-  - name: my-rand-str
-    driver: random2-string
+  - name: my-web-app
+    source:
+      name: web
     config:
-      length: 12
-  - name: my-rand-str2
-    driver: random-string
-    config:
-      length: -12
+      build:
+        method: pack
+      values:
+        container:
+          port: 8080
+          env:
+            normal:
+              FOO: BAR
