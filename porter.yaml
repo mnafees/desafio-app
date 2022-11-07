@@ -1,6 +1,8 @@
 version: v1
 resources:
   - name: my-web-app
+    depends_on:
+      - worker
     source:
       name: web
     config:
