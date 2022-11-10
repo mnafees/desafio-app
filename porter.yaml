@@ -1,11 +1,12 @@
 version: v1
 resources:
-  - name: my-web-app
+  - name: "main"
     source:
-      name: web
+      name: "web"
     config:
       build:
-        method: pack
+        method: "pack"
       values:
         container:
-          port: 8080
+          command: "npm run start"
+          port: 3000
