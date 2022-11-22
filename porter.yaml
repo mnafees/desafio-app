@@ -3,7 +3,6 @@ resources:
   - name: "main"
     source:
       name: "web"
-      repo: https://charts.dev.getporter.dev
     config:
       build:
         method: "pack"
