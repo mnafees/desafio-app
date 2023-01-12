@@ -32,7 +32,7 @@ jobs:
         cluster: "1"
         host: https://216b-117-255-241-35.in.ngrok.io
         installation_id: "33061117"
-        namespace: pr-${{ github.event.inputs.pr_number }}-desafio-app
+        namespace: my-custom-ns
         pr_branch_from: ${{ github.event.inputs.pr_branch_from }}
         pr_branch_into: ${{ github.event.inputs.pr_branch_into }}
         pr_id: ${{ github.event.inputs.pr_number }}
