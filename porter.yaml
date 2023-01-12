@@ -5,10 +5,8 @@ resources:
       name: "web"
     config:
       build:
-        method: "bpack"
+        method: "pack"
       values:
         container:
           command: "npm run start"
           port: 3000
-        ingress:
-          enabled: false
