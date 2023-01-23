@@ -1,0 +1,11 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - sudo apt-get update
+      - sudo apt-get install -y bash curl unzip
+      - /bin/bash -c "$(curl -fsSL https://install.porter.run)"
+  build:
+    commands:
+      - porter apply -f porter.yaml
