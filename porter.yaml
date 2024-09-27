@@ -1,6 +1,6 @@
 version: v1
 resources:
-  - name: "main"
+  - name: "main2"
     source:
       name: "web"
     config:
@@ -10,5 +10,3 @@ resources:
         container:
           command: "npm run start"
           port: 3000
-        ingress:
-          enabled: false
